@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salah Derbas Portfolio</title>
+<meta name="description" content="Portfolio of Salah Derbas - Full Stack Developer, showcasing projects, skills, and resume.">
+<meta name="keywords" content="Salah Derbas, Full Stack Developer, Portfolio, Web Development, Laravel, JavaScript, TailwindCSS">
+<meta name="author" content="Salah Derbas">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body class="transition-colors duration-500">
+
+<header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/70 dark:bg-gray-800/70 shadow-md transition-colors duration-500">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <a href="index.html" class="text-2xl font-bold" style="color: var(--primary-color);">Salah Derbas</a>
+    <ul class="hidden md:flex gap-8 items-center font-medium">
+        <li>
+            <a href="#home" class="text-orange-500 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-500 transition-colors duration-300"> Home </a>
+        </li>
+
+        <li>
+            <a href="#features" class="text-orange-500 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-500 transition-colors duration-300"> Features </a>
+        </li>
+
+        <li>
+            <a href="#portfolio" class="text-orange-500 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-500 transition-colors duration-300"> Portfolio </a>
+        </li>
+
+        <li>
+            <a href="#resume" class="text-orange-500 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-500 transition-colors duration-300"> Resume </a>
+        </li>
+
+        <li>
+            <a href="#skills" class="text-orange-500 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-500 transition-colors duration-300"> Skills </a>
+        </li>
+
+        <li>
+            <a href="#contact" class="text-orange-500 hover:text-orange-700 dark:text-orange-400 dark:hover:text-orange-500 transition-colors duration-300"> Contact </a>
+        </li>
+    </ul>
+
+    <div class="flex items-center gap-4">
+      <button id="theme-toggle" class="text-xl p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">🌙</button>
+      <button id="mobile-menu-btn" class="md:hidden text-2xl p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-700 transition">☰</button>
+    </div>
+  </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden backdrop-blur-xl border-t border-gray-200 dark:border-black shadow-xl transition-all duration-300">
+        <ul class="flex flex-col gap-4  p-6  font-medium ">
+            <li><a href="#home" class=" mobile-link">Home</a></li>
+            <li><a href="#features" class="mobile-link">Features</a></li>
+            <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+            <li><a href="#resume" class="mobile-link">Resume</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+<a href="https://wa.me/962785204657" target="_blank" class="whatsapp-btn flex items-center justify-center">
+  <i class="fab fa-whatsapp text-xl"></i>
+</a>
+
+<main class="pt-20">
+    <section id="home" class="min-h-screen flex flex-col md:flex-row items-center justify-center px-6 py-6 md:px-12 gap-12">
+    <div class="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none" style="background: radial-gradient(circle at 20% 30%, var(--primary-color), transparent 40%), radial-gradient(circle at 80% 70%, var(--primary-color), transparent 40%);"></div>
+    <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-orange-500 text-lg md:text-xl font-semibold mb-3 animate-fadeInUp">
+            WELCOME TO MY WORLD
+        </h2>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 animate-fadeInUp delay-200">
+            Hi, I’m  <span class="text-orange-500">Salah Derbas</span>
+        </h1>
+
+        <h3 class="text-lg md:text-xl mb-6 leading-relaxed animate-fadeInUp delay-400">
+            Senior Full Stack Developer with 5+ years of experience building scalable SaaS platforms,
+            RESTful APIs, and high-performance web applications.
+        </h3>
+
+        <p class="mb-8 leading-relaxed animate-fadeInUp delay-600">
+            Specialized in Laravel, PHP, React.js, and MySQL. 
+            Strong background in system architecture, database optimization,
+            payment gateway integration, and delivering B2B / B2C platforms,
+            e-commerce systems, and enterprise dashboards with clean, maintainable code.
+        </p>
+
+        <div class="flex gap-4 justify-center md:justify-start animate-fadeInUp delay-800">
+            <a href="https://www.linkedin.com/in/salah-derbas/" target="_blank" class="social-btn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://www.facebook.com/salah.drbas.1" target="_blank" class="social-btn">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/salahdrbas/" target="_blank" class="social-btn">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/SalahDerbas" target="_blank" class="social-btn">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@SalahDerbas" target="_blank"  class="social-btn">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+    <div class="md:w-1/2 animate-fadeInUp">
+        <img src="assets/images/hero.png" alt="Hero Image" class="w-full rounded-lg shadow-xl hover:scale-105 transition-transform duration-500">
+    </div>
+    </section>
+
+<section class="relative py-16 overflow-hidden transition-colors duration-500">
+  <div class="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none" style="background: radial-gradient(circle at 20% 30%, var(--primary-color), transparent 40%), radial-gradient(circle at 80% 70%, var(--primary-color), transparent 40%);"></div>
+
+  <div class="max-w-6xl mx-auto px-6 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="feature-card group bg-white/60 dark:bg-slate-800/60 backdrop-blur-lg p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-1 border border-slate-200 dark:border-slate-700">
+        <h3 class="text-3xl md:text-4xl font-extrabold text-orange-500 mb-2 premium-number" data-target="5">0+</h3>
+        <p class="text-sm uppercase tracking-wide">
+          Years of Experience
+        </p>
+      </div>
+
+      <div class="feature-card group bg-white/60 dark:bg-slate-800/60 backdrop-blur-lg p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-1 border border-slate-200 dark:border-slate-700">
+        <h3 class="text-3xl md:text-4xl font-extrabold text-orange-500 mb-2 premium-number" data-target="40">0+</h3>
+        <p class="text-sm uppercase tracking-wide">
+          Projects Delivered
+        </p>
+      </div>
+
+      <div class="feature-card group bg-white/60 dark:bg-slate-800/60 backdrop-blur-lg p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 hover:-translate-y-1 border border-slate-200 dark:border-slate-700">
+        <h3 class="text-3xl md:text-4xl font-extrabold text-orange-500 mb-2 premium-number" data-target="20">0+</h3>
+        <p class="text-sm uppercase tracking-wide">
+          Happy Clients
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="relative py-24 px-6 md:px-12 overflow-hidden">
+  <div class="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none" style="background: radial-gradient(circle at 20% 30%, var(--primary-color), transparent 40%), radial-gradient(circle at 80% 70%, var(--primary-color), transparent 40%);"></div>
+
+  <div class="max-w-8xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+        <h3 class="text-3xl md:text-5xl font-bold mb-4" style="color: var(--primary-color);">FEATURES</h3>
+        <p class="hero-paragraph max-w-2xl mx-auto">
+            Here are some of my core skills and responsibilities in software development.
+        </p>
+    </div>
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="feature-card p-6 bg-white dark:bg-gray-900 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 flex flex-col items-center text-center transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+        <div class="feature-icon text-4xl mb-4">💻</div>
+        <h4 class="text-lg font-semibold mb-2" style="color: var(--primary-color);">Software Engineering</h4>
+        <p class="hero-paragraph text-sm">
+          I handle the design, development, testing and maintenance of software applications and apply engineering principles and knowledge of programming languages to build solutions for end users.
+        </p>
+      </div>
+
+      <div class="feature-card p-6 bg-white dark:bg-gray-900 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 flex flex-col items-center text-center transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+        <div class="feature-icon text-4xl mb-4">🌐</div>
+        <h4 class="text-lg font-semibold mb-2" style="color: var(--primary-color);">Full Stack Developer</h4>
+        <p class="hero-paragraph text-sm">
+          I build full stack websites and applications using Laravel, Node.js, MySQL, Spring Boot, React JS, Vue JS, Bootstrap, Firebase, Ajax.
+        </p>
+      </div>
+
+      <div class="feature-card p-6 bg-white dark:bg-gray-900 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 flex flex-col items-center text-center transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+        <div class="feature-icon text-4xl mb-4">🗄️</div>
+        <h4 class="text-lg font-semibold mb-2" style="color: var(--primary-color);">Backend Developer</h4>
+        <p class="hero-paragraph text-sm">
+          I take care of the backend development and maintenance, including databases, servers, and applications.
+        </p>
+      </div>
+
+      <div class="feature-card p-6 bg-white dark:bg-gray-900 rounded-xl shadow-md border border-gray-100 dark:border-gray-800 flex flex-col items-center text-center transition-transform transform hover:-translate-y-2 hover:shadow-xl">
+        <div class="feature-icon text-4xl mb-4">🎨</div>
+        <h4 class="text-lg font-semibold mb-2" style="color: var(--primary-color);">Frontend Developer</h4>
+        <p class="hero-paragraph text-sm">
+          I build front end websites and applications using HTML, CSS, React.js, Bootstrap, TypeScript, Ajax and JavaScript.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="portfolio" class="relative py-24 px-6 md:px-12 overflow-hidden">
+  <div class="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none" style="background: radial-gradient(circle at 20% 30%, var(--primary-color), transparent 40%), radial-gradient(circle at 80% 70%, var(--primary-color), transparent 40%);"></div>
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+        <h3 class="text-3xl md:text-5xl font-bold mb-4" style="color: var(--primary-color);">PORTFOLIO</h3>
+        <p class="hero-paragraph max-w-2xl mx-auto">
+            Here are some of the projects I have worked on. Click on GitHub or Demo to explore each one.
+        </p>
+    </div>
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" id="portfolio-grid"></div>
+    <template id="portfolio-template">
+        <div class="group relative rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-3">
+            <div class="overflow-hidden">
+                <img src="" alt=""  class="portfolio-img w-full h-52 object-contain transition-transform duration-500 group-hover:scale-105">
+            </div>
+            <div class="p-6 space-y-4">
+                <div>
+                    <p class="portfolio-category text-xs uppercase tracking-widest hero-paragraph"></p>
+                    <h4 class="portfolio-title text-xl font-semibold mt-1" style="color: var(--primary-color);"></h4>
+                </div>
+                <p class="portfolio-description text-sm hero-paragraph line-clamp-2"></p>
+                <div class="portfolio-tech flex flex-wrap gap-2"></div>
+                <div class="flex justify-between pt-4">
+                    <a href="#" target="_blank" class="portfolio-github px-4 py-2 text-sm rounded-lg border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+                        GitHub  
+                    </a>
+                    <a href="#" target="_blank" class="portfolio-live px-4 py-2 text-sm rounded-lg bg-orange-600 text-white hover:bg-orange-500 transition">
+                        Live
+                    </a>
+                </div>
+            </div>
+        </div>
+    </template>
+  </div>
+</section>
+
+
+<section id="resume" class="relative py-24 px-6 md:px-12 overflow-hidden">
+  <div class="container mx-auto max-w-6xl relative z-10">
+    <div class="text-center mb-12">
+      <h3 class="text-3xl md:text-5xl font-bold mb-4" style="color: var(--primary-color);">RESUME</h3>
+      <p class="hero-paragraph max-w-2xl mx-auto mb-6">
+        Explore my education and work experience. Download my resume for full details.
+      </p>
+      <a href="./assets/CV/Salah-Derbas - Full Stack Developer.pdf" download class="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-orange-500 transition">
+        <i class="fas fa-download"></i> Download Resume
+      </a>
+    </div>
+
+    <div class="relative">
+      <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gray-200 dark:border-gray-700"></div>
+      
+      <div class="grid grid-cols-1 gap-y-12 relative z-10">
+
+        <div class="flex flex-col md:flex-row md:items-start w-full gap-6">
+          <div class="md:w-1/2 md:pr-8 text-right order-2 md:order-1">
+            <div class="feature-card flex items-center justify-end gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition-transform">
+              <div class="feature-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="text-left">
+                <h4 class="font-semibold text-lg" style="color: var(--primary-color);">Bachelor’s Degree in Software Engineering</h4>
+                <p>University of Damascus</p>
+                <span class="text-sm">Oct 2015 – Jul 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2 md:pl-8 order-1 md:order-2"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:items-start w-full gap-6">
+          <div class="md:w-1/2 md:pr-8 text-right order-2 md:order-1">
+            <div class="feature-card flex items-center justify-end gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition-transform">
+              <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
+              <div class="text-left">
+                <h4 class="font-semibold text-lg" style="color: var(--primary-color);">Freelancer</h4>
+                <p>Jordan/Amman - Syria/Damascus</p>
+                <span class="text-sm">2020 – Present</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-1/2 md:pl-8 text-left order-1 md:order-2 flex flex-col gap-6">
+            <div class="feature-card flex items-center gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition-transform">
+              <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+              <div class="text-left">
+                <h4 class="font-semibold text-lg" style="color: var(--primary-color);">Full Stack Developer</h4>
+                <p>CSP, Saudi/Riyadh</p>
+                <span class="text-sm">April 2025 – Present</span>
+              </div>
+            </div>
+
+            <div class="feature-card flex items-center gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition-transform">
+              <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+              <div class="text-left">
+                <h4 class="font-semibold text-lg" style="color: var(--primary-color);">Full Stack Developer</h4>
+                <p>Media World, Jordan/Amman</p>
+                <span class="text-sm">April 2023 – May 2025</span>
+              </div>
+            </div>
+
+            <div class="feature-card flex items-center gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition-transform">
+              <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+              <div class="text-left">
+                <h4 class="font-semibold text-lg" style="color: var(--primary-color);">Backend Developer</h4>
+                <p>Geel Tech, Jordan/Amman</p>
+                <span class="text-sm">September 2022 – March 2023</span>
+              </div>
+            </div>
+
+            <!-- Frontend Developer: TandraTech -->
+            <div class="feature-card flex items-center gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition-transform">
+              <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+              <div class="text-left">
+                <h4 class="font-semibold text-lg" style="color: var(--primary-color);">Frontend Developer</h4>
+                <p>TandraTech, Syria/Damascus</p>
+                <span class="text-sm">July 2021 – July 2022</span>
+              </div>
+            </div>
+
+            <!-- Backend Developer: StorexWeb -->
+            <div class="feature-card flex items-center gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 hover:-translate-y-2 hover:shadow-xl transition-transform">
+              <div class="feature-icon"><i class="fas fa-certificate"></i></div>
+              <div class="text-left">
+                <h4 class="font-semibold text-lg" style="color: var(--primary-color);">Backend Developer</h4>
+                <p>StorexWeb, Syria/Damascus</p>
+                <span class="text-sm">September 2020 – March 2021</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills" class="py-20 transition-colors duration-300">
+  <div class="max-w-6xl mx-auto px-6">
+    
+    <h2 class="text-3xl font-bold text-center mb-12" style="color: var(--primary-color);">
+      SKILLS
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Languages -->
+      <div class="feature-card p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-800 hover:shadow-2xl transition duration-300">
+        <h3 class="text-lg font-semibold mb-4" style="color: var(--primary-color);">
+          Languages
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-indigo-500/10 badge-paragraph border border-indigo-400/40
+                       hover:ring-2 hover:ring-indigo-400 hover:scale-105
+                       transition duration-300">
+            <i class="devicon-php-plain"></i> PHP
+          </span>
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-yellow-400/10 text-yellow-600 border border-yellow-400/40
+                       hover:ring-2 hover:ring-yellow-400 hover:scale-105
+                       transition duration-300">
+            <i class="devicon-javascript-plain"></i> JavaScript
+          </span>
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-red-500/10 text-red-600 border border-red-400/40
+                       hover:ring-2 hover:ring-red-400 hover:scale-105
+                       transition duration-300">
+            <i class="devicon-ruby-plain"></i> Ruby
+          </span>
+
+        </div>
+      </div>
+      <!-- Back-End -->
+      <div class="feature-card p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-800 hover:shadow-2xl transition duration-300">
+        <h3 class="text-lg font-semibold mb-4" style="color: var(--primary-color);">
+          Back-End
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-red-500/10 text-red-600 border border-red-400/40
+                       hover:ring-2 hover:ring-red-400 hover:scale-105 transition duration-300">
+            <i class="devicon-laravel-plain"></i> Laravel
+          </span>
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-gray-500/10 badge-paragraph border border-gray-400/40
+                       hover:ring-2 hover:ring-gray-400 hover:scale-105 transition duration-300">
+            🔗 REST API
+          </span>
+
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="feature-card p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-800 hover:shadow-2xl transition duration-300">
+        <h3 class="text-lg font-semibold mb-4" style="color: var(--primary-color);">
+          Databases
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-gray-500/10 badge-paragraph border border-gray-400/40
+                       hover:ring-2 hover:ring-gray-400 hover:scale-105 transition duration-300">
+            🗄 SQL
+          </span>
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-blue-500/10 text-blue-600 border border-blue-400/40
+                       hover:ring-2 hover:ring-blue-400 hover:scale-105 transition duration-300">
+            <i class="devicon-mysql-plain"></i> MySQL
+          </span>
+
+        </div>
+      </div>
+      <!-- Front-End -->
+      <div class="feature-card p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-800 hover:shadow-2xl transition duration-300">
+        <h3 class="text-lg font-semibold mb-4" style="color: var(--primary-color);">
+          Front-End
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="skill-badge bg-orange-500/10 text-orange-600 border-orange-400/40 hover:ring-orange-400">
+            <i class="devicon-html5-plain"></i> HTML5
+          </span>
+
+          <span class="skill-badge bg-blue-500/10 text-blue-600 border-blue-400/40 hover:ring-blue-400">
+            <i class="devicon-css3-plain"></i> CSS3
+          </span>
+
+          <span class="skill-badge bg-purple-500/10 text-purple-600 border-purple-400/40 hover:ring-purple-400">
+            <i class="devicon-bootstrap-plain"></i> Bootstrap
+          </span>
+
+          <span class="skill-badge bg-green-500/10 text-green-600 border-green-400/40 hover:ring-green-400">
+            <i class="devicon-vuejs-plain"></i> Vue
+          </span>
+
+          <span class="skill-badge bg-cyan-400/10 text-cyan-600 border-cyan-400/40 hover:ring-cyan-400">
+            <i class="devicon-react-original"></i> React
+          </span>
+
+        </div>
+      </div>
+
+
+      <!-- Tools -->
+      <div class="feature-card p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-800 hover:shadow-2xl transition duration-300 md:col-span-2">
+        <h3 class="text-lg font-semibold mb-4" style="color: var(--primary-color);">
+          Tools
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="badge bg-orange-500/10 text-orange-600 border-orange-400/40 hover:ring-orange-400"><i class="devicon-git-plain"></i> Git</span>
+          <span class="badge bg-gray-500/10 badge-paragraph border-gray-400/40 hover:ring-gray-400"><i class="devicon-github-original"></i> GitHub</span>
+          <span class="badge bg-blue-500/10 text-blue-600 border-blue-400/40 hover:ring-blue-400"><i class="devicon-bitbucket-plain"></i> BitBucket</span>
+          <span class="badge bg-orange-500/10 text-orange-600 border-orange-400/40 hover:ring-orange-400"><i class="devicon-postman-plain"></i> Postman</span>
+          <span class="badge bg-blue-500/10 text-blue-600 border-blue-400/40 hover:ring-blue-400"><i class="devicon-vscode-plain"></i> VS Code</span>
+          <span class="badge bg-green-500/10 text-green-600 border-green-400/40 hover:ring-green-400"><i class="devicon-phpstorm-plain"></i> PHPStorm</span>
+          <span class="badge bg-blue-500/10 text-blue-600 border-blue-400/40 hover:ring-blue-400"><i class="devicon-jira-plain"></i> Jira</span>
+          <span class="badge bg-blue-500/10 text-blue-600 border-blue-400/40 hover:ring-blue-400"><i class="devicon-trello-plain"></i> Trello</span>
+          <span class="badge bg-yellow-400/10 text-yellow-600 border-yellow-400/40 hover:ring-yellow-400"><i class="devicon-linux-plain"></i> Linux</span>
+          <span class="badge bg-blue-500/10 text-blue-600 border-blue-400/40 hover:ring-blue-400"><i class="devicon-docker-plain"></i> Docker</span>
+          <span class="badge bg-red-500/10 text-red-600 border-red-400/40 hover:ring-red-400"><i class="devicon-jenkins-line"></i> Jenkins</span>
+
+        </div>
+      </div>
+
+      <!-- Real-Time Communication -->
+      <div class="feature-card p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-800 hover:shadow-2xl transition duration-300">
+        <h3 class="text-lg font-semibold mb-4" style="color: var(--primary-color);">
+          Real-Time Communication
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-red-500/10 text-red-600 border border-red-400/40
+                       hover:ring-2 hover:ring-red-400 hover:scale-105 transition duration-300">
+            ⚡ Livewire
+          </span>
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-gray-500/10 badge-paragraph border border-gray-400/40
+                       hover:ring-2 hover:ring-gray-400 hover:scale-105 transition duration-300">
+            📡 Ajax
+          </span>
+
+        </div>
+      </div>
+      <!-- Testing -->
+      <div class="feature-card p-6 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-800 hover:shadow-2xl transition duration-300">
+        <h3 class="text-lg font-semibold mb-4" style="color: var(--primary-color);">
+          Testing
+        </h3>
+
+        <div class="flex flex-wrap gap-3">
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-red-500/10 text-red-600 border border-red-400/40
+                       hover:ring-2 hover:ring-red-400 hover:scale-105 transition duration-300">
+            <i class="devicon-jest-plain"></i> Jest
+          </span>
+
+          <span class="flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full 
+                       bg-gray-500/10 badge-paragraph border border-gray-400/40
+                       hover:ring-2 hover:ring-gray-400 hover:scale-105 transition duration-300">
+            🧪 Unit Testing
+          </span>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="py-24 transition-colors duration-500">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4" style="color: var(--primary-color);">
+      CONTACT
+    </h2>
+
+    <p class="mb-12 text-lg md:text-xl">
+      I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+    </p>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-2 gap-6">
+
+      <!-- Email -->
+      <a href="mailto:salahdrbas1@gmail.com"
+         class="contact-btn bg-gradient-to-r from-indigo-400/20 via-indigo-300/20 to-indigo-400/20
+                badge-paragraph border border-indigo-400/30
+                hover:from-indigo-500/30 hover:to-indigo-500/30 hover:scale-105
+                shadow-md dark:shadow-lg
+                transition-all duration-300 flex items-center justify-center gap-3 px-6 py-4 rounded-xl">
+        <i class="fas fa-envelope text-lg"></i> Send me an Email
+      </a>
+
+      <!-- Phone -->
+      <a href="tel:+962785204657"
+         class="contact-btn bg-gradient-to-r from-green-400/20 via-green-300/20 to-green-400/20
+                badge-paragraph border border-green-400/30
+                hover:from-green-500/30 hover:to-green-500/30 hover:scale-105
+                shadow-md dark:shadow-lg
+                transition-all duration-300 flex items-center justify-center gap-3 px-6 py-4 rounded-xl">
+        <i class="fas fa-phone-alt text-lg"></i> Call Me
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/962785204657" target="_blank"
+         class="contact-btn bg-gradient-to-r from-emerald-400/20 via-emerald-300/20 to-emerald-400/20
+                badge-paragraph border border-emerald-400/30
+                hover:from-emerald-500/30 hover:to-emerald-500/30 hover:scale-105
+                shadow-md dark:shadow-lg
+                transition-all duration-300 flex items-center justify-center gap-3 px-6 py-4 rounded-xl">
+        <i class="fab fa-whatsapp text-lg"></i> WhatsApp Me
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/SalahDerbas" target="_blank"
+         class="contact-btn bg-gradient-to-r from-gray-400/20 via-gray-300/20 to-gray-400/20
+                badge-paragraph border border-gray-400/30
+                hover:from-gray-500/30 hover:to-gray-500/30 hover:scale-105
+                shadow-md dark:shadow-lg
+                transition-all duration-300 flex items-center justify-center gap-3 px-6 py-4 rounded-xl">
+        <i class="devicon-github-original text-lg"></i> GitHub
+      </a>
+
+      <!-- Facebook -->
+      <a href="https://web.facebook.com/salah.drbas.1" target="_blank"
+         class="contact-btn bg-gradient-to-r from-blue-400/20 via-blue-300/20 to-blue-400/20
+                badge-paragraph border border-blue-400/30
+                hover:from-blue-500/30 hover:to-blue-500/30 hover:scale-105
+                shadow-md dark:shadow-lg
+                transition-all duration-300 flex items-center justify-center gap-3 px-6 py-4 rounded-xl">
+        <i class="fab fa-facebook-f text-lg"></i> Facebook
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/salah-derbas/" target="_blank"
+         class="contact-btn bg-gradient-to-r from-sky-400/20 via-sky-300/20 to-sky-400/20
+                badge-paragraph border border-sky-400/30
+                hover:from-sky-500/30 hover:to-sky-500/30 hover:scale-105
+                shadow-md dark:shadow-lg
+                transition-all duration-300 flex items-center justify-center gap-3 px-6 py-4 rounded-xl">
+        <i class="fab fa-linkedin-in text-lg"></i> LinkedIn
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="relative mt-24 border-t border-gray-200 dark:border-gray-800 overflow-hidden">
+
+  <!-- subtle background effect -->
+  <div class="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none"
+       style="background: radial-gradient(circle at 20% 30%, var(--primary-color), transparent 40%),
+                      radial-gradient(circle at 80% 70%, var(--primary-color), transparent 40%);">
+  </div>
+
+  <div class="relative container mx-auto px-6 py-20">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-14 text-center md:text-left">
+
+      <!-- BRAND -->
+      <div class="footer-animate">
+        <h2 class="text-2xl font-bold tracking-wide mb-4" style="color: var(--primary-color);">
+          Salah Derbas
+        </h2>
+        <p class="hero-paragraph leading-relaxed max-w-sm mx-auto md:mx-0">
+          Full Stack Developer building scalable systems, high-performance platforms, and clean architecture solutions.
+        </p>
+      </div>
+
+      <!-- AVAILABILITY -->
+      <div class="footer-animate">
+        <h3 class="text-lg font-semibold mb-6 text-primary" style="color: var(--primary-color);">Availability</h3>
+        <p class="hero-paragraph leading-relaxed">
+          Open for freelance projects, full-time opportunities, and long-term collaborations worldwide.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-gray-200 text-center text-sm">
+      © <span id="year"></span> Salah Derbas. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+
+<script>
+const themeToggle = document.getElementById('theme-toggle');
+const root = document.documentElement;
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden'); // toggle الكلاس open
+  mobileMenu.classList.toggle('open'); // toggle الكلاس open
+});
+
+
+if(localStorage.getItem('theme') === 'dark') {
+  root.classList.add('dark');
+  themeToggle.textContent = '☀️';
+}
+
+themeToggle.addEventListener('click', () => {
+  root.classList.toggle('dark');
+  themeToggle.textContent = root.classList.contains('dark') ? '☀️' : '🌙';
+  localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+});
+
+
+const welcome = document.getElementById('hero-welcome');
+const name = document.getElementById('hero-name');
+const subtitle = document.getElementById('hero-subtitle');
+const paragraph = document.getElementById('hero-paragraph');
+
+const myName = "SALAH DERBAS";
+
+function typeText(element, text, speed = 100) {
+  let i = 0;
+  element.textContent = "";
+  const interval = setInterval(() => {
+    element.textContent += text.charAt(i);
+    i++;
+    if(i >= text.length) clearInterval(interval);
+  }, speed);
+}
+
+function showHeroText() {
+  welcome.classList.add('fade-in-up');
+
+  setTimeout(() => {
+    name.classList.add('fade-in-up');
+    typeText(name, myName, 120);
+  }, 800);
+
+  setTimeout(() => {
+    subtitle.classList.add('fade-in-up');
+  }, 2200);
+
+  setTimeout(() => {
+    paragraph.classList.add('fade-in-up');
+  }, 3500);
+}
+
+window.addEventListener('load', showHeroText);
+
+const premiumCounters = document.querySelectorAll('.premium-number');
+const premiumObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+
+      const counter = entry.target;
+      const target = +counter.getAttribute('data-target');
+      let start = 0;
+      const duration = 2000;
+      const startTime = performance.now();
+
+      function animate(currentTime){
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        const value = Math.floor(progress * target);
+        counter.textContent = `+${value}`;
+
+        if(progress < 1){
+          requestAnimationFrame(animate);
+        } else {
+          counter.textContent = `+${target}`;
+        }
+      }
+
+      requestAnimationFrame(animate);
+      premiumObserver.unobserve(counter);
+    }
+  });
+},{ threshold: 0.6 });
+
+premiumCounters.forEach(counter => {
+  premiumObserver.observe(counter);
+});
+</script>
+<script>
+  // Dynamic Year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Reveal on scroll
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll(".footer-animate").forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+const portfolioData = [
+    {
+        id: 1,
+        category: "Full Stack",
+        title: "3abee",
+        image: "./assets/images/projects/3abee.png",
+        role: "Full Stack Developer",
+        description:
+        "Large-scale digital card selling platform including Web App, Mobile App, and Admin Panel.",
+        features: [
+        "B2B & B2C architecture",
+        "Admin control dashboard",
+        "Digital card selling system",
+        "RESTful API integrations"
+        ],
+        technologies: ["Laravel", "MySQL", "REST API", "HTML5", "CSS3", "Bootstrap"],
+        live: "https://3abee.com/",
+        github: "https://github.com/SalahDerbas",
+        status: "Production"
+    },
+
+    {
+        id: 7,
+        category: "Backend",
+        title: "Mazadak Auction System",
+        image: "./assets/images/projects/mazadak.png",
+        role: "Backend Developer",
+        description:
+        "Online auction system with scheduled bidding and automated sale process.",
+        features: [
+        "Auction scheduling",
+        "Multi-user bidding",
+        "Automated sale completion",
+        "Admin control system"
+        ],
+        technologies: ["Laravel", "PHP", "MySQL", "REST API"],
+        live: "https://b2b.mazadak.sa/",
+        github: "https://github.com/SalahDerbas",
+        status: "Production"
+    },
+
+
+    {
+        id: 4,
+        category: "Full Stack",
+        title: "3abbeGO eSIM",
+        image: "./assets/images/projects/3abeego.webp",
+        role: "Backend Developer & Analyst",
+        description:
+        "eSIM platform for selling local and global internet packages.",
+        features: [
+        "Virtual SIM purchase system",
+        "Multi-country package support",
+        "B2B & B2C structure",
+        "Admin management system"
+        ],
+        technologies: ["Laravel", "MySQL", "REST API"],
+        live: "https://3abeego.com/",
+        github: "https://github.com/SalahDerbas",
+        status: "In Development"
+    },
+
+    {
+        id: 2,
+        category: "Backend",
+        title: "HR Management API",
+        image: "./assets/images/projects/hr.png",
+        role: "Backend Developer",
+        description:
+        "RESTful API system for HR operations and authentication management.",
+        features: [
+        "User authentication system",
+        "HR task management",
+        "Role & permission control",
+        "System configuration endpoints"
+        ],
+        technologies: ["Laravel", "MySQL", "REST API"],
+        live: "#",
+        github: "https://github.com/SalahDerbas/HR",
+        status: "Completed"
+    },
+
+    {
+        id: 8,
+        category: "Full Stack",
+        title: "FCNS",
+        image: "./assets/images/projects/fcns.png",
+        role: "Backend Developer",
+        description:
+        "Corporate website with full content management and user tracking system.",
+        features: [
+        "Admin control panel",
+        "Content management system",
+        "User census tracking",
+        "Service management"
+        ],
+        technologies: ["Laravel", "jQuery", "AJAX", "MySQL"],
+        live: "https://fncs-jo.com/",
+        github: "https://github.com/SalahDerbas",
+        status: "Production"
+    },
+
+    {
+        id: 9,
+        category: "Backend",
+        title: "BIO FOOD",
+        image: "./assets/images/projects/bio.png",
+        role: "Backend Developer",
+        description:
+            "Web and mobile food ordering platform with admin dashboard.",
+        features: [
+            "Online food ordering",
+            "Admin control panel",
+            "Invoice management",
+            "Mobile integration API"
+        ],
+        technologies: ["Laravel", "MySQL", "REST API"],
+        live: "http://biofood.website/",
+        github: "https://github.com/SalahDerbas",
+        status: "Production"
+    },
+
+    {
+        id: 3,
+        category: "Full Stack",
+        title: "School Management System",
+        image: "./assets/images/projects/schools.webp",
+        role: "Full Stack Developer",
+        description:
+        "Comprehensive school management platform for admin, teachers, students, and parents.",
+        features: [
+        "Admin control panel",
+        "Teacher & student management",
+        "Parent access system",
+        "School resource management"
+        ],
+        technologies: ["Laravel", "MySQL", "HTML5", "CSS3", "Bootstrap"],
+        live: "#",
+        github: "https://github.com/SalahDerbas/School",
+        status: "Completed"
+    },
+
+    {
+        id: 5,
+        category: "Full Stack",
+        title: "Payment Gateways Integration",
+        image: "./assets/images/projects/Payment-Gateway.png",
+        role: "Full Stack Developer",
+        description:
+        "Unified payment gateway integration platform supporting multiple providers.",
+        features: [
+        "PayPal integration",
+        "PayMob integration",
+        "Tap integration",
+        "Unified payment abstraction layer"
+        ],
+        technologies: ["Laravel", "MySQL", "REST API"],
+        live: "#",
+        github: "https://github.com/SalahDerbas/Payment-Gateways",
+        status: "Completed"
+    },
+
+    {
+        id: 6,
+        category: "Full Stack",
+        title: "Restaurant Management System",
+        image: "./assets/images/projects/Rest.jpeg",
+        role: "Full Stack Developer",
+        description:
+        "Restaurant system managing reservations, cashier operations, and invoices.",
+        features: [
+        "Customer reservations",
+        "Cashier management",
+        "Product & invoice system",
+        "Admin dashboard"
+        ],
+        technologies: ["Laravel", "jQuery", "AJAX", "MySQL", "HTML5", "CSS3", "Bootstrap"],
+        live: "#",
+        github: "https://github.com/SalahDerbas/RestManagementSystem",
+        status: "Completed"
+    },
+
+    {
+        id: 10,
+        category: "Full Stack",
+        title: "Invoice Management System",
+        image: "./assets/images/projects/invoice.png",
+        role: "Full Stack Developer",
+        description:
+        "Invoice tracking and categorization system with role-based permissions.",
+        features: [
+        "Invoice categorization",
+        "Role-based permissions",
+        "Admin reporting system",
+        "User management"
+        ],
+        technologies: ["Laravel", "jQuery", "AJAX", "MySQL", "HTML5", "CSS3", "Bootstrap"],
+        live: "#",
+        github: "https://github.com/SalahDerbas/Invoicing_bill",
+        status: "Completed"
+    }
+    ];
+
+  const portfolioGrid = document.getElementById("portfolio-grid");
+  const template = document.getElementById("portfolio-template");
+
+  portfolioData.forEach(project => {
+    const clone = template.content.cloneNode(true);
+
+    clone.querySelector(".portfolio-img").src = project.image;
+    clone.querySelector(".portfolio-img").alt = project.title;
+    clone.querySelector(".portfolio-category").textContent = project.category;
+    clone.querySelector(".portfolio-title").textContent = project.title;
+    clone.querySelector(".portfolio-description").textContent = project.description;
+    const techContainer = clone.querySelector(".portfolio-tech");
+    project.technologies.forEach(tech => {
+      const span = document.createElement("span");
+      span.textContent = tech;
+      span.className = "text-xs px-2 py-1 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-md";
+      techContainer.appendChild(span);
+    });
+    clone.querySelector(".portfolio-github").href = project.github;
+    const liveBtn = clone.querySelector(".portfolio-live");
+    if (project.live && project.live !== "#") {
+      liveBtn.href = project.live;
+      liveBtn.classList.remove("opacity-50", "cursor-not-allowed");
+    } else {
+      liveBtn.href = "#";
+      liveBtn.classList.add("opacity-50", "cursor-not-allowed");
+      liveBtn.setAttribute("disabled", "true");
+    }
+    portfolioGrid.appendChild(clone);
+  });
+});
+</script>
+
+</body>
+</html>
