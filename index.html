@@ -82,15 +82,12 @@
         </h1>
 
         <h3 class="text-lg md:text-xl mb-6 leading-relaxed animate-fadeInUp delay-400">
-            Senior Full Stack Developer with 5+ years of experience building scalable SaaS platforms,
-            RESTful APIs, and high-performance web applications.
+          Senior Full Stack Developer with 5+ years of experience building scalable SaaS platforms, RESTful APIs, and high-performance web applications.
+          Specialized in Laravel, PHP, React.js, and MySQL, with strong expertise in system architecture, database optimization, and payment gateway integration.
         </h3>
 
         <p class="mb-8 leading-relaxed animate-fadeInUp delay-600">
-            Specialized in Laravel, PHP, React.js, and MySQL. 
-            Strong background in system architecture, database optimization,
-            payment gateway integration, and delivering B2B / B2C platforms,
-            e-commerce systems, and enterprise dashboards with clean, maintainable code.
+          Experienced in delivering B2B and B2C platforms, e-commerce solutions, and enterprise dashboards with a strong focus on performance, scalability, and clean maintainable code.
         </p>
 
         <div class="flex gap-4 justify-center md:justify-start animate-fadeInUp delay-800">
@@ -283,7 +280,7 @@
               <div class="text-left">
                 <h4 class="font-semibold text-lg" style="color: var(--primary-color);">Full Stack Developer</h4>
                 <p>CSP, Saudi/Riyadh</p>
-                <span class="text-sm">April 2025 – Present</span>
+                <span class="text-sm">March 2025 – Present</span>
               </div>
             </div>
 
@@ -758,15 +755,52 @@ premiumCounters.forEach(counter => {
 document.addEventListener("DOMContentLoaded", () => {
 
 const portfolioData = [
+    {
+        id: 12,
+        category: "Full Stack",
+        title: "StepsSite - QR",
+        image: "./assets/images/projects/StepsSite.png",
+        role: "Full Stack Developer",
+        description:
+        "Developed a QR-based digital menu system allowing customers to browse and order directly from their phones.",
+        features: [
+        "B2B & B2C architecture",
+        "Admin control dashboard",
+        "Digital card selling system",
+        ],
+        technologies: ["Laravel", "MySQL", "REST API", "HTML5", "CSS3", "Bootstrap"],
+        live: "https://stepssite.com/",
+        github: "https://github.com/SalahDerbas",
+        status: "Production"
+    },
+    {
+        id: 4,
+        category: "Full Stack",
+        title: "3abeeGO — eSIM Platform",
+        image: "./assets/images/projects/3abeego.webp",
+        role: "Backend Developer & Analyst",
+        description:
+        "Implemented eSIM management and automated activation workflows.",
+        features: [
+        "Virtual SIM purchase system",
+        "Multi-country package support",
+        "B2B & B2C structure",
+        "Admin management system"
+        ],
+        technologies: ["Laravel", "MySQL", "REST API"],
+        live: "https://3abeego.com/",
+        github: "https://github.com/SalahDerbas",
+        status: "In Development"
+    },
 
     {
         id: 1,
         category: "Full Stack",
-        title: "3abee",
+        title: "3abee — Digital Cards Platform",
         image: "./assets/images/projects/3abee.png",
         role: "Full Stack Developer",
         description:
-        "Large-scale digital card selling platform including Web App, Mobile App, and Admin Panel.",
+        "Delivered B2B/B2C services and digital products.",
         features: [
         "B2B & B2C architecture",
         "Admin control dashboard",
@@ -780,51 +814,13 @@ const portfolioData = [
     },
 
     {
-        id: 4,
-        category: "Full Stack",
-        title: "3abbeGO eSIM",
-        image: "./assets/images/projects/3abeego.webp",
-        role: "Backend Developer & Analyst",
-        description:
-        "eSIM platform for selling local and global internet packages.",
-        features: [
-        "Virtual SIM purchase system",
-        "Multi-country package support",
-        "B2B & B2C structure",
-        "Admin management system"
-        ],
-        technologies: ["Laravel", "MySQL", "REST API"],
-        live: "https://3abeego.com/",
-        github: "https://github.com/SalahDerbas",
-        status: "In Development"
-    },
-    {
         id: 12,
         category: "Full Stack",
-        title: "Steps Site",
-        image: "./assets/images/projects/StepsSite.png",
-        role: "Full Stack Developer",
-        description:
-        "A digital QR menu system that lets customers browse and order directly from their phone without downloading an app.",
-        features: [
-        "B2B & B2C architecture",
-        "Admin control dashboard",
-        "Digital card selling system",
-        ],
-        technologies: ["Laravel", "MySQL", "REST API", "HTML5", "CSS3", "Bootstrap"],
-        live: "https://stepssite.com/",
-        github: "https://github.com/SalahDerbas",
-        status: "Production"
-    },
-
-    {
-        id: 12,
-        category: "Full Stack",
-        title: "CSP",
+        title: "CSP - Construction Specification",
         image: "./assets/images/projects/csp.svg",
         role: "Full Stack Developer",
         description:
-        "A platform that brings together contractors and consultants on effective construction projects.",
+        "Built a platform enabling contractors and consultants to manage contracts and projects.",
         features: [
         "B2B & B2C architecture",
         "Admin control dashboard",
@@ -839,11 +835,11 @@ const portfolioData = [
     {
         id: 7,
         category: "Backend",
-        title: "Hafiza & Fursan System",
+        title: "Hafiza & Fursan",
         image: "./assets/images/projects/Hafiza_Fursan.png",
         role: "Backend Developer",
         description:
-        "An educational platform to bring together students and teachers within a complete Quranic environment and learning platform.",
+        "Built an educational platform connecting admin, students and teachers.",
         features: [
         "Auction scheduling",
         "Multi-user bidding",
@@ -855,15 +851,53 @@ const portfolioData = [
         github: "https://github.com/SalahDerbas",
         status: "Production"
     },
+    {
+        id: 7,
+        category: "Backend",
+        title: "Mazadak — Auction Platform",
+        image: "./assets/images/projects/mazadak.png",
+        role: "Backend Developer",
+        description:
+        "Developed auction workflows, bidding systems, and payment integration using Laravel, REST APIs, and MySQL.",
+        features: [
+        "Auction scheduling",
+        "Multi-user bidding",
+        "Automated sale completion",
+        "Admin control system"
+        ],
+        technologies: ["Laravel", "PHP", "MySQL", "REST API"],
+        live: "https://b2b.mazadak.sa/",
+        github: "https://github.com/SalahDerbas",
+        status: "Production"
+    },
+    {
+        id: 9,
+        category: "Backend",
+        title: "BioFood — Ordering System",
+        image: "./assets/images/projects/bio.png",
+        role: "Backend Developer",
+        description:
+            "Built APIs supporting ordering workflows and real-time updates.",
+        features: [
+            "Online food ordering",
+            "Admin control panel",
+            "Invoice management",
+            "Mobile integration API"
+        ],
+        technologies: ["Laravel", "MySQL", "REST API"],
+        live: "http://biofood.website/",
+        github: "https://github.com/SalahDerbas",
+        status: "Production"
+    },
 
     {
         id: 7,
         category: "Full Stack",
-        title: "Mueeen System",
+        title: "Mueeen",
         image: "./assets/images/projects/mueeen.png",
         role: "Full Stack Developer",
         description:
-        "Cloud computing from anywhere, anytime.",
+        "Built a cloud platform providing remote access to computing resources.",
         features: [
         "Auction scheduling",
         "Multi-user bidding",
@@ -875,15 +909,35 @@ const portfolioData = [
         github: "https://github.com/SalahDerbas",
         status: "Production"
     },
+    {
+        id: 8,
+        category: "Full Stack",
+        title: "FCNS — Management System",
+        image: "./assets/images/projects/FCNS.png",
+        role: "Backend Developer",
+        description:
+        "Built content management and reporting dashboards with Laravel.",
+        features: [
+        "Admin control panel",
+        "Content management system",
+        "User census tracking",
+        "Service management"
+        ],
+        technologies: ["Laravel", "jQuery", "AJAX", "MySQL"],
+        live: "https://fncs-jo.com/",
+        github: "https://github.com/SalahDerbas",
+        status: "Production"
+    },
+
 
     {
         id: 7,
         category: "Full Stack",
-        title: "AlAndalus System",
+        title: "AlAndalus",
         image: "./assets/images/projects/AlAndalus.jpg",
         role: "Full Stack Developer",
         description:
-        "An educational platform that brings together students and teachers within a cloud-based platform and mobile application.",
+        "Built a cloud platform and mobile app connecting students and teachers.",
         features: [
         "Auction scheduling",
         "Multi-user bidding",
@@ -903,7 +957,7 @@ const portfolioData = [
         image: "./assets/images/projects/hannot.webp",
         role: "Backend Developer",
         description:
-        "An online store project for selling gold products for a retail shop.",
+        "Built an online store selling gold products.",
         features: [
         "Auction scheduling",
         "Multi-user bidding",
@@ -916,25 +970,6 @@ const portfolioData = [
         status: "Production"
     },
 
-    {
-        id: 7,
-        category: "Backend",
-        title: "Mazadak Auction System",
-        image: "./assets/images/projects/mazadak.png",
-        role: "Backend Developer",
-        description:
-        "Online auction system with scheduled bidding and automated sale process.",
-        features: [
-        "Auction scheduling",
-        "Multi-user bidding",
-        "Automated sale completion",
-        "Admin control system"
-        ],
-        technologies: ["Laravel", "PHP", "MySQL", "REST API"],
-        live: "https://b2b.mazadak.sa/",
-        github: "https://github.com/SalahDerbas",
-        status: "Production"
-    },
 
     {
         id: 2,
@@ -956,45 +991,6 @@ const portfolioData = [
         status: "Completed"
     },
 
-    {
-        id: 8,
-        category: "Full Stack",
-        title: "FCNS",
-        image: "./assets/images/projects/FCNS.png",
-        role: "Backend Developer",
-        description:
-        "Corporate website with full content management and user tracking system.",
-        features: [
-        "Admin control panel",
-        "Content management system",
-        "User census tracking",
-        "Service management"
-        ],
-        technologies: ["Laravel", "jQuery", "AJAX", "MySQL"],
-        live: "https://fncs-jo.com/",
-        github: "https://github.com/SalahDerbas",
-        status: "Production"
-    },
-
-    {
-        id: 9,
-        category: "Backend",
-        title: "BIO FOOD",
-        image: "./assets/images/projects/bio.png",
-        role: "Backend Developer",
-        description:
-            "Web and mobile food ordering platform with admin dashboard.",
-        features: [
-            "Online food ordering",
-            "Admin control panel",
-            "Invoice management",
-            "Mobile integration API"
-        ],
-        technologies: ["Laravel", "MySQL", "REST API"],
-        live: "http://biofood.website/",
-        github: "https://github.com/SalahDerbas",
-        status: "Production"
-    },
 
     {
         id: 3,
